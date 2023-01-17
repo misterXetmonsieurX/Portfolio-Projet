@@ -1,0 +1,273 @@
+body{
+    overflow: hidden;
+}
+
+.main_container{
+    overflow: hidden;
+}
+
+
+/* **************** barre latérale de navigation pour mobile    ************ */
+.main_container .top_mobile_menu{
+    position: sticky;
+    width: 100%;
+    top: 0;
+    background-color: var(--main-color-white);
+    z-index: 10;
+    display: none;
+}
+
+.main_container .mobile_menu .owner_name{
+    font-size: 1.1rem;
+    color: var(--main-color-black);
+}
+.main_container .mobile_menu .burger_menu_icon i{
+    font-size: 1.3rem;
+    cursor: pointer;
+    color: var(--main-color-black);
+}
+.main_container .mobile_menu .burger_menu_icon i:hover{
+    color: var(--main-color-light-green);
+}
+
+
+/* **************** Menu Vertical Gauche de navigation  ******************** */
+
+#landing_page .left_mobile_menu{
+    position: absolute;
+    height: 100vh;
+    padding: 40px 10px;
+    width: 25%;
+    background-color: var(--main-color-white);
+    transition: .3s ease-in-out;
+    z-index: 9;
+    overflow: auto;
+}
+
+.left_mobile_menu .left_menu_top .owner_profile_pic{
+    background-color: var(--main-color-light-green-alpha);
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+    margin: 0 auto;
+}
+
+.left_mobile_menu .left_menu_top .owner_profile_pic img{
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+
+.left_mobile_menu .left_menu_top .owner_name_title{
+    padding-top: 15px;
+}
+
+.left_mobile_menu .left_menu_top .owner_name_title h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-align: center;
+    color: var(--main-color-black);
+}
+
+.left_mobile_menu .left_menu_top .owner_name_title p{
+    font-size: 1.4rem;
+    color: var(--main-color-gray);    
+    text-align: center;
+    padding-top: 10px;
+    opacity: .8;
+}
+
+.left_mobile_menu .left_menu_middle{
+    width: 100%;
+}
+
+.left_mobile_menu .left_menu_middle ul li{
+    width: 100%;
+}
+
+.left_mobile_menu .left_menu_middle ul li a{
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    font-size: 1.1rem;
+    color: var(--main-color-black);
+    border-right: 4px solid var(--main-color-white);
+    border-left: 4px solid var(--main-color-white);
+}
+
+.left_mobile_menu .left_menu_middle ul li a:hover{
+    border-right: 4px solid var(--main-color-light-green);
+}
+
+.left_mobile_menu .left_menu_middle ul li a.active{
+    border-right: 4px solid var(--main-color-light-green);
+}
+
+.left_menu_bottom .owner_socials i{
+    color: var(--main-color-gray);
+    font-size: 1.4rem;
+}
+
+.left_menu_bottom .owner_socials a:hover i{
+    color: var(--main-color-light-green);
+}
+
+/* ****************  page d'accueil **************** */
+
+#landing_page{
+    background-image: url("/assets/images/Home-background/Home_background.jpg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+#landing_page .main_content_container{
+    overflow-y: auto;
+}
+
+#landing_page .bgd_overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.726);
+    color: var(--main-color-white);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.main_content_container{
+    height: 100%;
+    flex: 3;
+}
+
+.main_content_container .home{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.owner_info{
+    top: 50%;
+    left: 67%;
+    transform: translate(-67%, -50%);
+}
+
+.owner_info h3{
+    font-size: 4rem;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.owner_info .animated_title h4{
+    font-size: 1.8rem;
+    letter-spacing: .6px;
+    font-weight: 400;
+}
+
+.owner_info .animated_title .designer{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: blinking_text1 2s ease-in-out reverse infinite backwards;
+    display: none;
+}
+
+.owner_info .animated_title .frontend{
+    animation: blinking_text2 2s ease infinite alternate-reverse;
+}
+
+@keyframes blinking_text1{
+    from{
+        opacity: 1;
+        display: block;
+    }
+    50%{
+        opacity: .5;
+        display: block;
+    }
+    to{
+        opacity: 0;
+        display: none;
+    }
+}
+
+@keyframes blinking_text2{
+    from{
+        opacity: 0;
+        display: none;
+    }
+    50%{
+        opacity: .5;
+        display: block;
+    }
+    to{
+        opacity: 1;
+        display: block;
+    }
+}
+
+
+.owner_info ul li{
+    padding: 10px 0;
+    letter-spacing: .6px;
+    font-size: 1.6rem;
+    font-weight: 300;
+    white-space: nowrap;
+}
+
+.owner_info  ul li .info_type{
+    margin-right: 10px;
+}
+
+.owner_info  ul li .info_type::before{
+    content: '';
+    height: 2px;
+    width: 100%;
+    margin-right: 20px;
+    position: absolute;
+    bottom: -2px;
+    background-color: var(--main-color-light-green);
+}
+
+
+/* **************** Responsive design de la page d'accueil  ******************** */
+
+@media screen and (max-width: 992px){
+    .main_container .top_mobile_menu{
+        display: block;
+    }
+    #landing_page .left_mobile_menu{
+        transform: translateX(-100vw);
+        padding: 40px 5px;
+        width: 70%;
+    }
+
+    .owner_info{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media screen and (max-width: 496px){
+    #landing_page .left_mobile_menu{
+        width: 100%;
+    }
+
+    .owner_info h3{
+        font-size: 2.5rem;
+    }
+
+    .owner_info .animated_title h4{
+        font-size: 1.3rem;
+    }
+
+    .owner_info ul li{
+        font-size: 1.2rem;
+    } 
+}
