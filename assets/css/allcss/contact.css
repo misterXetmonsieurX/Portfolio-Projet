@@ -1,0 +1,92 @@
+.owner_adress > p{
+    font-family: 'PT sans';
+    font-size: 14px;
+    line-height: 25px;
+    margin-bottom: 15px;
+}
+
+.adress .adress_line{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 7px;
+}
+
+.adress .adress_line i{
+    font-size: 2rem;
+    opacity: .4;
+    padding: 5px;
+}
+.adress .adress_line p{
+    font-size: 1rem;
+}
+
+form input, form textarea{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-family: 'PT sans';
+    font-size: 1.1rem;
+}
+
+.input{
+    border: 1px solid rgba(204, 204, 204, 0.452);
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.input i{
+    font-size: 1.22rem;
+    opacity: .2;
+    padding: 0 20px;
+}
+
+textarea{
+    resize: none;
+}
+
+.input .fa-comment{
+    padding-top: 10px;
+}
+
+.input:focus{
+    border-bottom: 2px solid var(--main-color-light-green)
+}
+
+.captcha_container{
+    height: 70px;
+    width: 100%;
+    text-align: center;
+    line-height: 70px;
+    border: 1px solid rgba(204, 204, 204, 0.452);
+}
+
+.send_btn{
+    display: inline-block;
+    position: relative;
+}
+
+.send_btn input[type="submit"]{
+    border: 2px solid var(--main-color-light-green);
+    color: var(--main-color-black);
+    background-color: var(--main-color-white);
+    font-weight: 400;
+    font-family: 'PT Sans', Helvetica, sans-serif;
+    transition: .5s;
+    cursor: pointer;
+    padding: 10px 30px;
+    margin-top: 5px ;
+    font-weight: 400;
+}
+
+.send_btn input[type="submit"]:hover{
+    background-color: var(--main-color-light-green);
+    color: var(--main-color-white);
+}
+
+@media screen and (max-width: 768px){
+    .contact_container{
+        flex-direction: column;
+    }
+}
