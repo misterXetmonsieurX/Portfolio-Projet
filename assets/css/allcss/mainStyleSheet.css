@@ -33,15 +33,15 @@ body{
 
 /* **************** Menu Vertical Gauche de navigation  ******************** */
 
-#landing_page .left_mobile_menu{
+.left_mobile_menu{
     position: absolute;
     height: 100vh;
-    padding: 40px 10px;
+    padding: 40px 10px 0;
     width: 25%;
     background-color: var(--main-color-white);
     transition: .3s ease-in-out;
     z-index: 9;
-    overflow: auto;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
 .left_mobile_menu .left_menu_top .owner_profile_pic{
@@ -89,7 +89,7 @@ body{
     display: block;
     width: 100%;
     text-align: center;
-    padding: 15px;
+    padding: 12px;
     font-size: 1.1rem;
     color: var(--main-color-black);
     border-right: 4px solid var(--main-color-white);
@@ -124,11 +124,11 @@ body{
     width: 100%;
 }
 
-#landing_page .main_content_container{
+.main_content_container{
     overflow-y: auto;
 }
 
-#landing_page .bgd_overlay{
+.bgd_overlay{
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.726);
@@ -241,11 +241,12 @@ body{
     .main_container .top_mobile_menu{
         display: block;
     }
-    #landing_page .left_mobile_menu{
+    .left_mobile_menu{
         transform: translateX(-100vw);
         padding: 40px 5px;
         width: 70%;
     }
+    
 
     .owner_info{
         top: 50%;
@@ -255,7 +256,7 @@ body{
 }
 
 @media screen and (max-width: 496px){
-    #landing_page .left_mobile_menu{
+    .left_mobile_menu{
         width: 100%;
     }
 

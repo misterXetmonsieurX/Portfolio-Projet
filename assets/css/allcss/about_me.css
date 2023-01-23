@@ -1,0 +1,319 @@
+
+#main_content_wrapper{
+    height: 100vh;
+    width: 100%;
+}
+
+.main_content{
+    width: 100%;
+    height: 100%;
+    margin-left: 25%;
+    padding: 60px 0 30px;
+    overflow-y: auto;
+}
+
+.main_content .page_title{
+    background-color: var(--main-color-light-green);
+    color: var(--main-color-white);
+    height: 60px;
+    padding: 0 25px 0 90px;
+    position: relative;
+}
+
+.main_content .page_title::before{
+    content: '';
+    background-color: #048463;
+    width: 15px;
+    height: 90%;
+    display: block;
+    position: absolute;
+    left: -5px;
+    bottom: -3px;
+    transform: skew(0deg, 50deg);;
+    z-index: -5;
+}
+
+.main_content .page_title h4{
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 60px;
+    white-space: nowrap;
+}
+
+.main_content .page_subtitle{
+    height: 30px;
+}
+
+.main_content .page_subtitle p{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 30px;
+    white-space: nowrap;
+    color: var(--main-color-gray);
+    opacity: .8;
+}
+
+.main_content .content{
+    padding: 40px 90px;
+    width: 100%;
+}
+
+.about_intro{
+    margin-bottom: 20px;
+}    
+
+.about_intro .intro h5{
+    font-size: 1.4rem;
+    font-weight: 400;
+    padding-bottom: 20px;
+    
+}
+
+.about_intro .intro p{
+    font-family: pt-sans;
+    font-size: 1.1rem;
+    line-height: 30px;
+    color: var(--main-color-gray);
+    margin-bottom: 15px;
+
+}
+
+.section_title{
+    display: inline-block;
+    font-size: 1.4rem;
+    font-weight: 400;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.section_title::after{
+    content: '';
+    background-color: var(--main-color-light-green);
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+}
+
+.testimonials_wrapper{
+    position: absolute;
+}
+
+.testimonials_wrapper .testimonial{
+    border: 1px solid var(--main-color-gray);
+    width: 80%;
+    border-radius: 5px;
+    margin: 0 0 50px 50px;
+}
+
+.testimonials_wrapper .testimonial > p{
+    font-family: pt-sans;
+    font-style: italic;
+    font-size: 1.2rem;
+    line-height: 25px;
+    color: var(--main-color-gray);
+    padding: 40px;
+}
+
+.commenthor{
+    left: -40px;
+    bottom: -50px;
+}
+
+.commenthor .commenthor_pic{
+    background-color: var(--main-color-white);
+    border-radius: 50%;
+}
+
+.commenthor .commenthor_pic img{
+    width: 80px;
+    border-radius: 50%;
+    border: 1px solid var(--main-color-gray);
+}
+
+.commenthor_id p:nth-child(2){
+    color: var(--main-color-gray);
+    font-family: pt-sans;
+    font-style: italic;
+}
+
+.owl-nav{
+    position: absolute;
+    right: 10px;
+    bottom: 15px;
+}
+
+/* ==========   services Section    ========== */
+
+.services_section{
+    padding-top: 30px;
+}
+
+.services_container .service_item{
+    width: 170px;
+    padding: 0 5px;
+}
+
+.service_item .service_icon{
+    margin: 0 auto;
+    height: 36%;
+}
+
+.service_item .service_icon img{
+    width: 80px;
+}
+
+.service_item .service_info{
+    text-align: center;
+}
+
+.service_item .service_info h5{
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding: 15px 0;
+}
+.service_item .service_info p{
+    font-family: pt-sans;
+    color: var(--main-color-gray);
+    line-height: 25px;
+}
+
+/* =================    Clients section    ==================== */
+.clients_section{
+    padding-top: 30px;
+}
+
+.clients_container{
+    width: 100%;
+    min-width: 100%;
+    padding: 10px;
+}
+
+.clients_item{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.clients_item img{
+    width: 100%;
+    opacity: .6;
+   
+}
+.clients_item a:hover img{
+    opacity: 1;
+}
+
+/* =================    fun facts section    ==================== */
+
+.funfact_section{
+    padding-top: 30px;
+}
+
+.funfact_item{
+    width: 24%;
+    text-align: center;
+    padding: 30px 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.funfact_item .funfact_icon i{
+    font-size: 3rem;
+    font-weight: 200;
+    opacity: .6;
+    padding-bottom: 10px;
+}
+
+.funfact_item .funfact_title{
+    font-size: 1.2rem;
+    padding: 10px 0;
+}
+.funfact_item .funfact_count{
+    font-size: 2rem;
+    color: var(--main-color-light-green);
+    font-family: pt-sans;
+}
+/* =================    Responsive design    ==================== */
+
+@media screen and (max-width:992px){
+    .main_content{
+        margin-left: 0;
+    } 
+
+    .main_content .content {
+        padding: 40px 20px;
+    }
+
+    .main_content .page_title {
+        padding: 0 25px 0 20px;
+    }
+
+    .main_content .page_title::before{
+        display: none;
+    }
+
+    .services_container{
+        flex-wrap: wrap;
+    }
+
+    .services_container .service_item{
+        width: 50%;
+        padding: 15px 0;
+    }
+
+    .clients_container{
+        flex-wrap: wrap;
+    }
+
+    .clients_container .clients_item{
+        width: 30%;
+    }
+
+    .clients_item_pict{
+        width: 100px;
+        
+    }
+
+    .clients_container .clients_item img{
+        padding: 20px;
+        
+    }
+
+    .funfacts_container{
+        justify-content: center;
+    }
+
+    .funfact_item{
+        width: 47%;
+        margin: 10px;
+    }
+
+}
+
+@media screen and (max-width: 768px){
+    .about_intro{
+        flex-direction: column;
+    }
+
+    .testimonials_wrapper{
+        position: relative;
+    }
+
+    .services_container .service_item{
+        width: 100%;
+        padding: 10px 20px;
+    }
+
+    .clients_container .clients_item{
+        width: 100%;   
+    }
+
+    .funfact_item{
+        width: 97%;
+        margin: 10px;
+    }
+}
