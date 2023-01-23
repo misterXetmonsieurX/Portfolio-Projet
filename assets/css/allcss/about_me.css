@@ -70,7 +70,7 @@
 }
 
 .about_intro .intro p{
-    font-family: pt-sans;
+    font-family: 'PT Sans', Helvetica, sans-serif;
     font-size: 1.1rem;
     line-height: 30px;
     color: var(--main-color-gray);
@@ -108,7 +108,7 @@
 }
 
 .testimonials_wrapper .testimonial > p{
-    font-family: pt-sans;
+    font-family: 'PT Sans', Helvetica, sans-serif;
     font-style: italic;
     font-size: 1.2rem;
     line-height: 25px;
@@ -134,7 +134,7 @@
 
 .commenthor_id p:nth-child(2){
     color: var(--main-color-gray);
-    font-family: pt-sans;
+    font-family: 'PT Sans', Helvetica, sans-serif;
     font-style: italic;
 }
 
@@ -174,7 +174,7 @@
     padding: 15px 0;
 }
 .service_item .service_info p{
-    font-family: pt-sans;
+    font-family: 'PT Sans', Helvetica, sans-serif;
     color: var(--main-color-gray);
     line-height: 25px;
 }
@@ -235,7 +235,7 @@
 .funfact_item .funfact_count{
     font-size: 2rem;
     color: var(--main-color-light-green);
-    font-family: pt-sans;
+    font-family: 'PT Sans', Helvetica, sans-serif;
 }
 /* =================    Responsive design    ==================== */
 

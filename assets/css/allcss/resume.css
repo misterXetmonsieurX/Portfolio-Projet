@@ -1,0 +1,120 @@
+.date{
+    background-color: #9bd952;
+    color: var(--main-color-white);
+    display: inline-block;
+    padding: 3px 10px 3px 40px;
+    position: relative;
+    white-space: nowrap;
+}
+
+.date::before{
+    content: '';
+    background-color: #71a338;
+    width: 8px;
+    height: 100%;
+    display: block;
+    position: absolute;
+    left: 0px;
+    bottom: -2px;
+    transform: skew(0deg, 30deg);;
+    z-index: -5;
+}
+
+.resume_item{
+    padding: 20px 0 30px 40px;
+}
+
+.resume_item h6{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.resume_item p:nth-child(2){
+    font-family: 'PT Sans', Helvetica, sans-serif;
+    font-size: .8rem;
+    color: var(--main-color-gray);
+}
+
+.resume_item p:nth-child(3){
+    font-family: 'PT Sans', Helvetica, sans-serif;
+    font-size: .9rem;
+    padding-top: 10px;
+    line-height: 1.5rem;
+    font-weight: 300;
+    opacity: .8;
+}
+
+.design_skills{
+    padding-bottom: 30px;
+}
+
+.skill_progress{
+    padding-bottom: 10px;
+}
+
+.skill_title{
+    font-size: .9rem;
+    font-weight: 400;
+    display: block;
+    padding-bottom: 5px;
+}
+
+.progressbar_container{
+    height: 14px;
+    background-color: var(--main-color-white);
+    border: 2px solid var(--main-color-light-green);
+    border-radius: 30px;
+    position: relative;
+}
+
+.progressbar_container .progress_limiter{
+    height: 55%;
+    width: 100%;
+    top: 50%;
+    left: 2px;
+    transform: translateY(-50%);
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.progressbar_container .progress_content{
+    background-color: var(--main-color-light-green);
+    height: 100%;
+    width: 100%;
+    animation: progressBar 2s ease-in-out;
+}
+
+@keyframes progressBar{
+    from{
+        width: 20%;
+    }
+    to{
+        width: 100%;
+    }
+}
+
+.cv_download_btn{
+    display: inline-block;
+    margin: 40px 0 90px ;
+    border: 2px solid var(--main-color-light-green);
+}
+
+.cv_download_btn a{
+    color: var(--main-color-black);
+    display: block;
+    padding: 10px 30px;
+    font-weight: 400;
+    font-family: 'PT Sans', Helvetica, sans-serif;
+    transition: .5s;
+}
+
+.cv_download_btn:hover a{
+    background-color: var(--main-color-light-green);
+    color: var(--main-color-white);
+}
+
+@media screen and (max-width: 768px) {
+    .resume_items{
+        flex-direction: column;
+    }
+}
